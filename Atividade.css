@@ -1,0 +1,55 @@
+.cabecalho{
+    color: rgb(14, 13, 13);
+    background-color: rgb(243, 237, 243);
+    
+    grid-area: cabecalho;
+    padding-left: 5px;
+    padding-top: 5%;
+    grid-column: central;
+}
+
+.conteudo {
+    background-color: lightgray;
+    grid-area: central;
+}
+
+.conteudoitem {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    color: black;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.lateralEsquerda {
+    background-color: white;
+    color: black;
+    grid-area: esquerda;
+}
+
+
+.lateralDireita{
+    background-color:white;
+    grid-area: direita;
+    color:black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 5% auto;
+    grid-template-areas: 
+        "cabecalho cabecalho cabecalho"
+        "menu menu menu"
+        "esquerda central direita";
+    height: auto;
+}
+
+body {
+    height: 100%;
+    width:100%
+}
